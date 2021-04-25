@@ -1,6 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<iomanip>
+
 using namespace std;
 
 class student
@@ -22,7 +23,9 @@ public:
 void student::calculate()
 {
  per=(p_marks+c_marks+m_marks+e_marks+cs_marks)/5.0;
- if(per>=60)
+ if(per >= 80) 
+ grade='A++';
+ else if(per>=60)
  grade='A';
  else if(per>=50)
  grade='B';
